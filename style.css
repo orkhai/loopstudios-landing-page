@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 36rem;
+  padding: 2.2rem 1.6rem;
+  background: url(images/mobile/image-hero.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+header img {
+  width: 9rem;
+  z-index: 2;
+}
+
+header button {
+  background: transparent;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu {
+  height: 2rem;
+  width: 2rem;
+  z-index: 2;
+  background: url(images/icon-hamburger.svg) no-repeat center;
+}
+
+.mobile-menu:hover {
+  cursor: pointer;
+}
+
+.mobile-menu-open {
+  height: 2rem;
+  width: 2rem;
+  z-index: 2;
+  background: url(images/icon-close.svg) no-repeat center;
+}
+
+.mobile-menu-open-background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 0%);
+  transition: all linear 0.2s;
+}
+
+.mobile-navbar-options {
+  position: relative;
+  top: 10vh;
+  text-align: left;
+  z-index: 2;
+  color: hsl(0, 0%, 100%);
+  transition: all ease-in 0.2s;
+  text-transform: uppercase;
+  display: none;
+}
+
+.mobile-navbar-options ul {
+  padding: 0;
+  font-size: 2rem;
+  line-height: 2.3;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mobile-navbar-options-displayed {
+  display: block;
+  overflow: hidden;
+}
+
+.desktop-navbar-options {
+  display: none;
+}
+
+.desktop-navbar-options li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.desktop-navbar-options li:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  padding-top: 0.4rem;
+  border-bottom: 0.185rem solid hsl(0, 0%, 100%);
+}
+
+.immersive {
+  padding: 1.5rem;
+  border: 0.125rem solid hsl(0, 0%, 100%);
+  position: relative;
+  top: 10rem;
+}
+
+.immersive h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 5rem 1.6rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.06rem;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.interactive {
+  margin-bottom: 5rem;
+}
+
+.interactive-image {
+  height: 15rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  background: url(images/mobile/image-interactive.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.interactive-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(0, 0%, 55%);
+}
+
+.creations h2 {
+  margin-bottom: 2.5rem;
+}
+
+.creations h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  position: relative;
+  top: 3.2rem;
+  left: 1rem;
+}
+
+.creations div {
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.creations div:hover {
+  opacity: 0.3;
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.creations button {
+  width: 10rem;
+  height: 2.8rem;
+  margin-top: 0.6rem;
+  font-size: 1.24rem;
+  letter-spacing: 0.15rem;
+  border: 0.065rem solid hsl(0, 0%, 0%);
+  background: hsl(0, 0%, 100%);
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.creations button:hover {
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.deep-earth {
+  background: url(images/mobile/image-deep-earth.jpg);
+}
+
+.night-arcade {
+  background: url(images/mobile/image-night-arcade.jpg);
+}
+
+.soccer-team-vr {
+  background: url(images/mobile/image-soccer-team.jpg);
+}
+
+.the-grid {
+  background: url(images/mobile/image-grid.jpg);
+}
+
+.from-up-above-vr {
+  background: url(images/mobile/image-from-above.jpg);
+}
+
+.pocket-borealis {
+  background: url(images/mobile/image-pocket-borealis.jpg);
+}
+
+.the-curiosity {
+  background: url(images/mobile/image-curiosity.jpg);
+}
+
+.make-it-fisheye {
+  background: url(images/mobile/image-fisheye.jpg);
+}
+
+footer {
+  padding: 4rem 0 3rem;
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.footer-navbar-options ul {
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 2.3;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-bottom-images {
+  width: 10rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navbar-options li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.footer-navbar-options li:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  padding-top: 0.01rem;
+  border-bottom: 0.185rem solid hsl(0, 0%, 100%);
+}
+
+.footer-bottom-images img:hover {
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.185rem solid hsl(0, 0%, 100%);
+}
+
+footer p {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+  color: hsl(0, 0%, 55%);
+}
+
+@media (max-width: 350px) {
+  .immersive {
+    padding: 1rem;
+  }
+
+  .immersive h1 {
+    font-size: 1.6rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 749px) {
+  header {
+    padding: 2.3rem;
+  }
+
+  .immersive {
+    padding: 2.5rem;
+  }
+
+  main {
+    padding: 5rem 2.3rem;
+  }
+}
+
+@media (min-width: 750px) {
+  header {
+    height: 24rem;
+    padding: 2.5rem 4rem;
+    background: url(images/desktop/image-hero.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  header img {
+    width: 11rem;
+  }
+
+  header button,
+  .mobile-menu,
+  .mobile-menu-open,
+  .mobile-menu-open-background,
+  .mobile-navbar-options,
+  .mobile-navbar-options-displayed {
+    display: none;
+  }
+
+  .desktop-navbar-options {
+    width: 28rem;
+    display: inline-block;
+  }
+
+  .desktop-navbar-options ul {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .immersive {
+    width: 56%;
+    top: 4rem;
+  }
+
+  .immersive h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 5rem 4rem;
+    text-align: left;
+  }
+
+  .interactive {
+    margin-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(3rem, auto);
+  }
+
+  .interactive-image {
+    height: auto;
+    width: auto;
+    margin-bottom: 0;
+    grid-column: 1/5;
+    grid-row: 1/6;
+  }
+
+  .interactive-content {
+    padding: 2rem 0 0 3.5rem;
+    z-index: 2;
+    grid-column: 4/7;
+    grid-row: 4/6;
+    background: hsl(0, 0%, 100%);
+  }
+
+  .interactive-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .interactive-content p {
+    margin-bottom: 0;
+  }
+
+  .creations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(3rem, auto);
+    gap: 1.2rem;
+  }
+
+  .creations h2 {
+    margin: 0.6rem 0 0 0;
+    font-size: 2.3rem;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .creations h3 {
+    top: 13.6rem;
+    left: 1rem;
+  }
+
+  .creations div {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .creations button {
+    height: 3rem;
+    width: 70%;
+    margin: 0 0 0 2.8rem;
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .deep-earth {
+    grid-column: 1;
+    grid-row: 2/7;
+    background: url(images/desktop/image-deep-earth.jpg);
+  }
+
+  .night-arcade {
+    grid-column: 2;
+    grid-row: 2/7;
+    background: url(images/desktop/image-night-arcade.jpg);
+  }
+
+  .soccer-team-vr {
+    grid-column: 3;
+    grid-row: 2/7;
+    background: url(images/desktop/image-soccer-team.jpg);
+  }
+
+  .the-grid {
+    grid-column: 4;
+    grid-row: 2/7;
+    background: url(images/desktop/image-grid.jpg);
+  }
+
+  .from-up-above-vr {
+    grid-column: 1;
+    grid-row: 7/12;
+    background: url(images/desktop/image-from-above.jpg);
+  }
+
+  .pocket-borealis {
+    grid-column: 2;
+    grid-row: 7/12;
+    background: url(images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .the-curiosity {
+    grid-column: 3;
+    grid-row: 7/12;
+    background: url(images/desktop/image-curiosity.jpg);
+  }
+
+  .make-it-fisheye {
+    grid-column: 4;
+    grid-row: 7/12;
+    background: url(images/desktop/image-fisheye.jpg);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 29rem;
+    padding: 2.5rem 8rem;
+  }
+
+  .immersive {
+    width: 48%;
+    padding: 2.5rem;
+  }
+
+  .immersive h1 {
+    font-size: 3.5rem;
+  }
+
+  main {
+    padding: 7rem 8rem;
+  }
+
+  .interactive {
+    grid-auto-rows: minmax(5rem, auto);
+  }
+
+  .interactive-content {
+    padding: 3rem 0 0 4.5rem;
+  }
+
+  .creations {
+    grid-auto-rows: minmax(5rem, auto);
+  }
+
+  .creations h2 {
+    font-size: 2.6rem;
+  }
+
+  .creations h3 {
+    font-size: 1.7rem;
+    left: 1.8rem;
+    top: 22rem;
+  }
+
+  .creations button {
+    margin: 0 0 0 4.9rem;
+  }
+
+  footer {
+    padding: 4rem 8rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-top {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: right;
+  }
+
+  .footer-bottom-images {
+    width: auto;
+    margin: 0 0 1.8rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-bottom-images img {
+    margin-left: 1.5rem;
+  }
+
+  .footer-navbar-options ul {
+    margin: 1rem 0 0;
+    width: 25rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin: 1rem 0 0.2rem;
+  }
+}
